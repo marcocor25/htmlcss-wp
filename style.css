@@ -8,10 +8,9 @@
 
 /* ------------------------ */
 
-
 html {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 .container {
@@ -22,11 +21,12 @@ html {
     min-height: 140px;
     margin: 0 auto;
     margin-top: 24px;
-    /* background: #D782E0; */
 }
 
 .header-logo {
     width: 150px;
+    padding-right: 20px;
+    border-right: 1px solid #EBEBEB;
 }
 
 .header-logo img {
@@ -39,7 +39,6 @@ html {
 }
 
 .button {
-    /* background: orange; */
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -52,27 +51,53 @@ html {
     color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main-1 {
+.first-jumbotron {
+    background: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
     min-height: 510px;
     margin: 0 auto;
     margin-top: 28px;
-    background: #E0D686;
+    overflow: hidden;
+    position: relative;
 }
 
-.main-2 {
+.first-jumbotron::after {
+    background: rgba(0, 0, 0, 0.2);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.first-jumbotron-title {
+    width: 720px;
+    padding: 50px;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.big-title, .small-title {
+    color: white;
+}
+
+.big-title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.small-title {
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.second-jumbotron {
     margin: 0 auto;
     margin-top: 32px;
     background: #2C88F6;
