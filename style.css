@@ -8,6 +8,12 @@
 
 /* ------------------------ */
 
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
 .container {
     max-width: 1172px;
 }
@@ -16,8 +22,48 @@
     min-height: 140px;
     margin: 0 auto;
     margin-top: 24px;
-    background: #D782E0;
+    /* background: #D782E0; */
 }
+
+.header-logo {
+    width: 150px;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.button-list {
+    margin-top: 30px;
+    list-style: none;
+}
+
+.button {
+    /* background: orange; */
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #8F8F8F;
+    float: left;
+}
+
+.button:hover {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-1 {
     min-height: 510px;
