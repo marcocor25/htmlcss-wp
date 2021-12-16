@@ -1,0 +1,74 @@
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------ */
+
+.container {
+    max-width: 1172px;
+}
+
+.header {
+    min-height: 140px;
+    margin: 0 auto;
+    margin-top: 24px;
+    background: #D782E0;
+}
+
+.main-1 {
+    min-height: 510px;
+    margin: 0 auto;
+    margin-top: 28px;
+    background: #E0D686;
+}
+
+.main-2 {
+    margin: 0 auto;
+    margin-top: 32px;
+    background: #2C88F6;
+}
+
+.top-row, .column {
+    background: #B1CEE4;
+}
+
+.top-row {
+    width: 100%;
+    min-height: 85px;
+    margin-bottom: 25px;
+}
+
+.content {
+    width: 60%;
+    min-height: 545px;
+    margin: 0 20px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+.sidebar {
+    width: calc(20% - 20px);
+    min-height: 545px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer {
+    min-height: 62px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    background: #7530EE;
+}
+
+/* FINE */
