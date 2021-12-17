@@ -197,7 +197,16 @@ html {
     min-height: 62px;
     margin-top: 10px;
     margin-bottom: 24px;
-    background: #7530EE;
+}
+
+.credits {
+    padding: 20px;
+    text-align: center;
+}
+
+.heart {
+    font-size: 22px;
+    color: red;
 }
 
 /* --------------------------------------- */
