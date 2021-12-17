@@ -13,16 +13,6 @@ html {
 
 /* --------------------------------------- */
 
-/* CLEARFIX */
-
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-/* --------------------------------------- */
-
 /* PRESET */
 
 .container {
@@ -48,15 +38,23 @@ html {
     right: 0;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /* --------------------------------------- */
+
+/* HEADER */
 
 .header-section {
     min-height: 120px;
+    padding-top: 10px;
 }
 
 .logo {
     width: 150px;
-    padding-top: 10px;
     padding-right: 20px;
     border-right: 1px solid #EBEBEB;
 }
@@ -68,14 +66,14 @@ html {
 .button-list {
     min-width: 600px;
     margin-top: 10px;
-    font-size: 15px;
     list-style: none;
+    font-size: 15px;
 }
 
 .button {
-    padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-right: 20px;
     text-decoration: none;
     color: #8F8F8F;
     float: left;
@@ -85,10 +83,14 @@ html {
     color: black;
 }
 
+/* --------------------------------------- */
+
+/* MAIN */
+
 .first-jumbotron {
     background: url(img/banner.jpg);
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     border-radius: 10px;
     min-height: 510px;
     margin-top: 28px;
@@ -96,51 +98,45 @@ html {
     position: relative;
 }
 
-.first-jumbotron-title {
+.first-jumbotron-content {
     max-width: 720px;
     padding: 50px;
-    z-index: 10;
+    color: white;
     position: absolute;
     left: 0;
     bottom: 0;
+    z-index: 1;
 }
 
-.big-title, .small-title {
-    color: white;
-}
-
-.big-title {
+.first-jumbotron-content h1 {
     font-size: 30px;
     font-weight: 500;
 }
 
-.small-title {
-    font-size: 18px;
+.first-jumbotron-content h2 {   
     padding-top: 5px;
-}
-
-.second-jumbotron {
-    margin-top: 32px;
-    background: #2C88F6;
-}
-
-.top-h1 {
-    font-size: 36px;
-}
-
-.top-h2 {
     font-size: 18px;
     font-weight: 400;
 }
 
-.top-row, .column {
-    background: #B1CEE4;
+.second-jumbotron {
+    margin-top: 32px;
 }
 
 .top-row {
     width: 100%;
     min-height: 85px;
     margin-bottom: 25px;
+}
+
+.top-row h1 {
+    font-size: 36px;
+}
+
+.top-row h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #8F8F8F;
 }
 
 .banner {
@@ -184,12 +180,18 @@ html {
     background-size: cover;
 }
 
+.col-content {
+    color: #8F8F8F;
+}
 
+.col-content h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+/* --------------------------------------- */
 
-
-
-
+/* FOOTER */
 
 .footer-section {
     min-height: 62px;
@@ -197,5 +199,7 @@ html {
     margin-bottom: 24px;
     background: #7530EE;
 }
+
+/* --------------------------------------- */
 
 /* FINE */
